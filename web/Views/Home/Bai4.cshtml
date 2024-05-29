@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model IEnumerable<web.Controllers.trigle>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">@Html.DisplayNameFor(model => model.a)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.b)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.c)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.area)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.a)</td>
+                <td>@Html.DisplayFor(modelItem => item.b)</td>
+                <td>@Html.DisplayFor(modelItem => item.c)</td>
+                <td>@Html.DisplayFor(modelItem => item.area)</td>
+            </tr>
+        }
+    </tbody>
+</table>
