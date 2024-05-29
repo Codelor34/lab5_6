@@ -42,6 +42,7 @@ namespace Lab5_6.Controllers
         }
 
         //Bai 4
+        //hihi
         
         private static List<trigle> ListAdd = new List<trigle>();
         [Route("bai4")]
